@@ -1,31 +1,32 @@
-# Credentials and local configuration
+# Dependencies and builds
+node_modules/
+dist/
+build/
+coverage/
+
+# Local configuration and credentials
 .env
 .env.*
 !.env.example
+local.settings.json
 *.key
 *.pem
 *.pfx
 secrets/
 credentials/
 
+# Azure local state
+.azure/
+.funcignore.local
+
 # Terraform/OpenTofu state
 .terraform/
-.terraform.lock.hcl
 *.tfstate
 *.tfstate.*
-crash.log
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
 
-# Azure local files
-.azure/
-
-# Build, editor, and operating-system files
-dist/
-build/
+# Editors and operating systems
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
